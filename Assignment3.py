@@ -6,14 +6,14 @@
 
 # The menu 
 print ("These are the prices for toppings:")
-print ("1 topping is 1$")
-print ("2 toppings is 1.75$")
-print ("3 toppings is 2.50$")
-print ("4 toppings is 3.35$")
+print ("1 topping is $1")
+print ("2 toppings is $1.75")
+print ("3 toppings is $2.50")
+print ("4 toppings is $3.35")
 print ("")
 print ("These prices for the sizes are:")
-print ("Large is 6$")
-print ("ExtraLarge is 10$")
+print ("Large is $6")
+print ("ExtraLarge is $10")
 print ("")
 
 # Making Instructions
@@ -36,13 +36,19 @@ if topping + size == topping1 + Large:
 	Large = 6
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(Large) + float(topping1))
+	topping1SubL = float(Large) + float(topping1)
+	topping1SubLFormat = '${:,.2f}'.format(topping1SubL)
+	input(topping1SubLFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(Large) + float(topping1)) * float(HTS))
+	topping1TaxL = (float(Large) + float(topping1)) * float(HTS)
+	topping1TaxLFormat = '${:.2f}'.format(topping1TaxL)
+	input(topping1TaxLFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(Large) + float(topping1)) * float(HTS) + float(Large) + float(topping1))
+	topping1TotalL = (float(Large) + float(topping1)) * float(HTS) + float(Large) + float(topping1)
+	topping1TotalLFormat = '${:,.2f}'.format(topping1TotalL)
+	input(topping1TotalLFormat)
 	#Reassigning Variable Back
 	Large = "1"
 	pass
@@ -53,13 +59,19 @@ if topping + size == topping2 + Large:
 	Large = 6
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(Large) + float(topping2))
-	print("The taxes are ")
+	topping2SubL = float(Large) + float(topping2)
+	topping2SubLFormat = '${:,.2f}'.format(topping2SubL)
+	input(topping2SubLFormat)
 	#Calculating Taxees
-	input((float(Large) + float(topping2)) * float(HTS))
+	print("The taxes are ")
+	topping2TaxL = (float(Large) + float(topping2)) * float(HTS)
+	topping2TaxLFormat = '${:.2f}'.format(topping2TaxL)
+	input(topping2TaxLFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(Large) + float(topping2)) * float(HTS) + float(Large) + float(topping2))
+	topping2TotalL = (float(Large) + float(topping2)) * float(HTS) + float(Large) + float(topping2)
+	topping2TotalLFormat = '${:,.2f}'.format(topping2TotalL)
+	input(topping2TotalLFormat)
 	#Reassigning Variables Back
 	topping2 = "2"
 	Large = "1"
@@ -71,13 +83,19 @@ if topping + size == topping3 + Large:
 	Large = 6
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(Large) + float(topping3))
+	topping3SubL = float(Large) + float(topping3)
+	topping3SubLFormat = '${:,.2f}'.format(topping3SubL)
+	input(topping3SubLFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(Large) + float(topping3)) * float(HTS))
+	topping3TaxL = (float(Large) + float(topping3)) * float(HTS)
+	topping3TaxLFormat = '${:,.2f}'.format(topping3TaxL)
+	input(topping3TaxLFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(Large) + float(topping3)) * float(HTS) + float(Large) + float(topping3))
+	topping3TotalL = (float(Large) + float(topping3)) * float(HTS) + float(Large) + float(topping3)
+	topping3TotalLFormat = '${:,.2f}'.format(topping3TotalL)
+	input(topping3TotalLFormat)
 	#Reassigning Variables Back
 	topping3 = "3"
 	Large = "1"
@@ -89,13 +107,19 @@ if topping + size == topping4 + Large:
 	Large = 6
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(Large) + float(topping4))
+	topping4SubL = float(Large) + float(topping4)
+	topping4SubLFormat = '${:,.2f}'.format(topping4SubL)
+	input(topping4SubLFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(Large) + float(topping4)) * float(HTS))
+	topping4TaxL = (float(Large) + float(topping4)) * float(HTS)
+	topping4TaxLFormat = '${:,.2f}'.format(topping4TaxL)
+	input(topping4TaxLFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(Large) + float(topping4)) * float(HTS) + float(Large) + float(topping4))
+	topping4TotalL = (float(Large) + float(topping4)) * float(HTS) + float(Large) + float(topping4)
+	topping4TotalLFormat = '${:,.2f}'.format(topping4TotalL)
+	input(topping4TotalLFormat)
 	#Reassigning Variables Back
 	topping4 = "4"
 	Large = "1"
@@ -106,13 +130,19 @@ if topping + size == topping1 + ExtraLarge:
 	ExtraLarge = 10
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(ExtraLarge) + float(topping1))
+	topping1SubEX = float(ExtraLarge) + float(topping1)
+	topping1SubEXFormat = '${:,.2f}'.format(topping1SubEX)
+	input(topping1SubEXFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(ExtraLarge) + float(topping1)) * float(HTS))
+	topping1TaxeEX = (float(ExtraLarge) + float(topping1)) * float(HTS)
+	topping1TaxeEXFormat = '${:,.2f}'.format(topping1TaxeEX)
+	input(topping1TaxeEXFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(ExtraLarge) + float(topping1)) * float(HTS) + float(ExtraLarge) + float(topping1))
+	topping1TotalEX = (float(ExtraLarge) + float(topping1)) * float(HTS) + float(ExtraLarge) + float(topping1)
+	topping1TotalEXFormat = '${:,.2f}'.format(topping1TotalEX)
+	input(topping1TotalEXFormat)
 	#Reassigning Variable Back
 	ExtraLarge = "0"
 	pass
@@ -123,13 +153,19 @@ if topping + size == topping2 + ExtraLarge:
 	ExtraLarge = 10
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(ExtraLarge) + float(topping2))
+	topping2SubEX = float(ExtraLarge) + float(topping2)
+	topping2SubEXFormat = '${:,.2f}'.format(topping2SubEX)
+	input(topping2SubEXFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(ExtraLarge) + float(topping2)) * float(HTS))
+	topping2TaxeEX = (float(ExtraLarge) + float(topping2)) * float(HTS)
+	topping2TaxeEXFormat = '${:,.2f}'.format(topping2TaxeEX)
+	input(topping2TaxeEXFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(ExtraLarge) + float(topping2)) * float(HTS) + float(ExtraLarge) + float(topping2))
+	topping2TotalEX = (float(ExtraLarge) + float(topping2)) * float(HTS) + float(ExtraLarge) + float(topping2)
+	topping2TotalEXFormat = '${:,.2f}'.format(topping2TotalEX)
+	input(topping2TotalEXFormat)
 	#Reassigning Variables Back
 	topping2 = "2"
 	ExtraLarge = "0"
@@ -141,13 +177,19 @@ if topping + size == topping3 + ExtraLarge:
 	ExtraLarge = 10
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(ExtraLarge) + float(topping3))
+	topping3SubEX = float(ExtraLarge) + float(topping3)
+	topping3SubEXFormat = '${:,.2f}'.format(topping3SubEX)
+	input(topping3SubEXFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(ExtraLarge) + float(topping3)) * float(HTS))
+	topping3TaxeEX = (float(ExtraLarge) + float(topping3)) * float(HTS)
+	topping3TaxeEXFormat = '${:,.2f}'.format(topping3TaxeEX)
+	input(topping3TaxeEXFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(ExtraLarge) + float(topping3)) * float(HTS) + float(ExtraLarge) + float(topping3))
+	topping3TotalEX = (float(ExtraLarge) + float(topping3)) * float(HTS) + float(ExtraLarge) + float(topping3)
+	topping3TotalEXFormat = '${:,.2f}'.format(topping3TotalEX)
+	input(topping3TotalEXFormat)
 	#Reassigning Variables Back
 	topping3 = "3"
 	ExtraLarge = "0"
@@ -159,13 +201,19 @@ if topping + size == topping4 + ExtraLarge:
 	ExtraLarge = 10
 	#Calculating Subtotal
 	print ("This is the subtotal")
-	input(float(ExtraLarge) + float(topping4))
+	topping4SubEX = float(ExtraLarge) + float(topping4)
+	topping4SubEXFormat = '${:,.2f}'.format(topping4SubEX)
+	input(topping4SubEXFormat)
 	#Calculating Taxees
 	print("The taxes are ")
-	input((float(ExtraLarge) + float(topping4)) * float(HTS))
+	topping4TaxEX = (float(ExtraLarge) + float(topping4)) * float(HTS)
+	topping4TaxEXFormat = '${:,.2f}'.format(topping4TaxEX)
+	input(topping4TaxEXFormat)
 	#Calculating total cost
 	print("This is the total cost")
-	input((float(ExtraLarge) + float(topping4)) * float(HTS) + float(ExtraLarge) + float(topping4))
+	topping4TotalEX = (float(ExtraLarge) + float(topping4)) * float(HTS) + float(ExtraLarge) + float(topping4)
+	topping4TotalEXFormat = '${:,.2f}'.format(topping4TotalEX)
+	input(topping4TotalEXFormat)
 	#Reassigning Variables Back
 	topping4 = "4"
 	ExtraLarge = "0"
